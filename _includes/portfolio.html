@@ -16,19 +16,19 @@
             <div class="portfolio-contant">
               <ul id="portfolio-contant-active">
                   {% for project in site.data.projects %}
-                  <li class="mix {{ project.category }}">
-                    <a href="#">
-                      <img src="{{ project.img }}" alt="{{ project.title }}">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>{{ project.title }}</h2>
-                          <p>{{ project.content }}</p>
-                          
+                    <li class="mix {{ project.category }}">
+                      <a href="#">
+                        <img src="{{ project.img }}" alt="{{ project.title }}">
+                        <div class="overly">
+                          <div class="position-center">
+                            <h2>{{ project.title }}</h2>
+                            <p>{{ project.content }}</p>
+                            
+                          </div>
                         </div>
-                      </div>
-                    </a>
-                </li>
-                {% endfor %}
+                      </a>
+                  </li>
+                  {% endfor %}
               </ul>
             </div>
           </div>
